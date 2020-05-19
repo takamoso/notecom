@@ -31,5 +31,8 @@
     "vinyl-named-with-path": "^1.0.0",
     "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "modern-normalize": "^0.6.0"
   }
 }
