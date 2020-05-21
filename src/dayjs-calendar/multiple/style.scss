@@ -1,0 +1,68 @@
+@import '~modern-normalize';
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  color: #323c43;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #F4F4F1;
+}
+
+.c-calendar-container {
+  display: inline-block;
+  margin: 24px 0;
+  padding: 5px;
+  background-color: #fff;
+  @media (min-width: 768px) {
+    padding: 12px;
+  }
+}
+
+.c-calendar {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.c-calendar_title {
+  padding: 14px 0;
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+.c-calendar_weekday {
+  padding: 8px 0;
+  color: #a3a8ab;
+  font-weight: 400;
+}
+
+.c-calendar_date {
+  padding: 6px 4px;
+  text-align: center;
+  &.-prev,
+  &.-next {
+    color: #cecfd1;
+  }
+  span {
+    display: block;
+    padding: 8px;
+    @media (min-width: 768px) {
+      padding: 11px;
+    }
+    @at-root .c-calendar_date {
+      &.-today {
+        span {
+          color: #fff;
+          font-weight: 500;
+          border-radius: 50%;
+          background-color: #71728e;
+        }
+      }
+    }
+  }
+}
